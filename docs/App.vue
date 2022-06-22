@@ -17,6 +17,10 @@
     </div>
   </div>
 
+  <demo :level="1">
+    <div>3333333</div>
+  </demo>
+
   <div
     class="van-doc-nav"
     :class="{
@@ -88,8 +92,10 @@
 import { computed, ref, onMounted } from 'vue'
 import router from './router'
 import { catelogs, info } from '../doc.config'
+import demo from './demo.vue'
 
 export default {
+  components: { demo },
   setup () {
     const iframe = ref(null)
     const scrollFixed = ref(false)
@@ -106,6 +112,7 @@ export default {
       window.onscroll = () => {
         scrollFixed.value = document.documentElement.scrollTop >= 70
       }
+      console.log(1)
     })
 
     // 通知 demo 路由到同样的路由

@@ -6,7 +6,7 @@
 
 <script>
 import Layout from '../Layout'
-import MSfc from '../../src/sfc'
+import MSfc from '../../src/sfc/index.vue'
 
 export default {
   name: 'demo-sfc',
