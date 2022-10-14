@@ -4,17 +4,17 @@
   </div>
 </template>
 
-<script setup>
+<script>
 import { ref } from 'vue'
 
-// export default {
-//   setup () {
-//     return {
-//       msg: ref('world')
-//     }
-//   }
-// }
-const msg = ref('world')
+export default {
+  setup () {
+    return {
+      msg: ref('world')
+    }
+  }
+}
+// const msg = ref('world')
 </script>
 
 <style lang="less">
